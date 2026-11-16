@@ -80,5 +80,17 @@ fun EntrySiswaBody(
     Column(
         verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_large)),
         modifier = modifier.padding(dimensionResource(id = R.dimen.padding_medium))
-    ) {}
+    ) {
+        FormInputSiswa(
+            detailsSiswa = uiStateSiswa.detailsSiswa,
+            onValueChange = onSiswaValueChanged,
+            modifier = Modifier.fillMaxWidth()
+        )
+        Button(
+            onClick = onSaveClick,
+            enabled = uiStateSiswa.isEntryValid,
+            shape = MaterialTheme.shapes.small,
+            modifier = Modifier.fillMaxWidth()
+        ) {}
+    }
 }
