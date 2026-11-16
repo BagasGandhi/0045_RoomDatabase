@@ -125,5 +125,14 @@ fun FormInputSiswa(
             enabled = enabled,
             singleLine = true
         )
+        OutlinedTextField(
+            value = detailsSiswa.telpon,
+            onValueChange = {onValueChange(detailsSiswa.copy(telpon = it))},
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            label = { Text(stringResource(R.string.telpon)) },
+            modifier = Modifier.fillMaxWidth(),
+            enabled = enabled,
+            singleLine = true
+        )
     }
 }
