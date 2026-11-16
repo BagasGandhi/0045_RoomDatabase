@@ -91,6 +91,8 @@ fun EntrySiswaBody(
             enabled = uiStateSiswa.isEntryValid,
             shape = MaterialTheme.shapes.small,
             modifier = Modifier.fillMaxWidth()
-        ) {}
+        ) {
+            Text(stringResource(R.string.btn_submit))
+        }
     }
 }
