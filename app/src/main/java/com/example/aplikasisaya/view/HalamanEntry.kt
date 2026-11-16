@@ -96,3 +96,12 @@ fun EntrySiswaBody(
         }
     }
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun FormInputSiswa(
+    detailsSiswa: DetailsSiswa,
+    modifier: Modifier = Modifier,
+    onValueChange: (DetailsSiswa) -> Unit = {},
+    enabled: Boolean = true
+) {}
