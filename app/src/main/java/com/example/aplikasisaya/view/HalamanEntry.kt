@@ -52,4 +52,14 @@ fun EntrySiswaScreen(
                 scrollBehavior = scrollBehavior
             )
         }
+    ) { innerPadding ->
+        EntrySiswaBody(
+            uiStateSiswa = viewModel.uiStateSiswa,
+            onSiswaValueChanged = viewModel::updateUiState,
+            onSaveClick = {
+                coroutineScope.launch {
+                    viewModel.saveSiswa()
+                    navigateBack()
+                }
+            },
 }
