@@ -1,7 +1,5 @@
 package com.example.aplikasisaya.uicontroller
 
-package com.example.aplikasisaya.uicontroller
-
 import com.example.aplikasisaya.R
 
 object DestinasiHome : DestinasiNavigasi {
